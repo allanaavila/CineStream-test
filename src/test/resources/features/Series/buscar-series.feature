@@ -1,6 +1,6 @@
 # language: pt
 Funcionalidade: Busca de séries
-  Como um usuário do sistema
+  Como um usuár400io do sistema
   Quero buscar séries pelo título
   Para verificar se elas estão cadastradas no sistema
 
