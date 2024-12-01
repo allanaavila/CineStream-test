@@ -23,6 +23,6 @@ public class RestAssuredUtil {
     }
 
     public static void setAuthHeader(String token) {
-        authToken = token; // Salva o token na variável estática
+        authToken = token;
     }
 }
