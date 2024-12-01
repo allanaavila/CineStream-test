@@ -1,6 +1,6 @@
 package com.cinestream.cinestream.cucumber.filmes;
 
-import com.cinestream.cinestream.cucumber.helper.AuthHelper;
+import com.cinestream.cinestream.cucumber.util.AuthHelper;
 import com.cinestream.cinestream.cucumber.restassured.RestAssuredUtil;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
@@ -8,7 +8,6 @@ import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.Assertions;
 
 public class RemoverFilmesFavoritosStepDefinition {
 

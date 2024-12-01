@@ -1,6 +1,6 @@
 package com.cinestream.cinestream.cucumber.filmes;
 
-import com.cinestream.cinestream.cucumber.helper.AuthHelper;
+import com.cinestream.cinestream.cucumber.util.AuthHelper;
 import com.cinestream.cinestream.cucumber.restassured.RestAssuredUtil;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
@@ -42,16 +42,5 @@ public class AdicionarFilmesFavoritosStepDefinition {
         response.then().statusCode(statusCode);
     }
 
-    @E("a mensagem retornada ao adicionar deve ser {string}")
-    public void validarMensagemAoAdicionar(String mensagemEsperada) {
-        String mensagem = response.getBody().asString();
-        Assertions.assertEquals(mensagemEsperada, mensagem, "A mensagem retornada está incorreta.");
-    }
-
-    @E("a mensagem retornada deve ser {string}")
-    public void validarMensagemDeRetorno(String mensagemEsperada) {
-        String mensagem = response.getBody().asString();
-        Assertions.assertEquals(mensagemEsperada, mensagem, "A mensagem retornada está incorreta.");
-    }
 
 }

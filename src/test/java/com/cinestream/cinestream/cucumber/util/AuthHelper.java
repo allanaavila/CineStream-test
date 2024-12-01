@@ -1,4 +1,4 @@
-package com.cinestream.cinestream.cucumber.helper;
+package com.cinestream.cinestream.cucumber.util;
 
 import com.cinestream.cinestream.cucumber.login.LoginRequest;
 import com.cinestream.cinestream.cucumber.restassured.RestAssuredUtil;
