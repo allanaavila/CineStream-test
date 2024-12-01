@@ -65,7 +65,7 @@ public class LoginStepDefinition {
         response.then().statusCode(status);
     }
 
-    @Entao("a mensagem retornada deve ser {string}")
+    @Entao("a mensagem deve ser {string}")
     public void validarMensagemDeErro(String mensagemEsperada) {
         String mensagem = response.getBody().asString();
         Assertions.assertEquals(mensagemEsperada, mensagem);

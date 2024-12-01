@@ -14,4 +14,4 @@ Funcionalidade: Login de usuários
   Cenário: Login com credenciais inválidas
     Quando realizo login com credenciais inválidas
     Então a requisição deve retornar status 401
-    E a mensagem retornada deve ser "Email ou senha incorretos"
+    E a mensagem deve ser "Email ou senha incorretos"
